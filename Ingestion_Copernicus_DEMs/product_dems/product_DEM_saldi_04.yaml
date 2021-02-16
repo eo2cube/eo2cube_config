@@ -1,0 +1,81 @@
+name: dem_saldi_04
+description: Copernicus DEM GLO-30 / Digital Elevation Model, Level 2 derived from WorldDEM
+metadata_type: eo
+
+metadata:
+  platform:
+    code: TanDEM-X
+  instrument:
+    name: SAR
+  product_type: DEM
+  format:
+    name: GeoTIFF
+
+measurements:
+    - name: 'DEM'
+      dtype: float32
+      nodata: -32767
+      units: 'metre'
+    - name: 'EDM'
+      dtype: uint8
+      nodata: 0
+      units: 'class'
+      flags_definition:
+        scl:
+          bits: [0,1,2,3,4,5,6,7,8,9,10,11,12,13]
+          description: Edit Data Mask – Pixel Values  
+          values:
+            0: Void (no data)
+            1: Not edited
+            2: Infill of external elevation data
+            3: Interpolated pixels
+            4: Smoothed pixels
+            5: Airport editing
+            6: Raised negative elevation pixels
+            7: Flattened pixels
+            8: Ocean pixels
+            9: Lake pixels
+            10: River pixels
+            11: Shoreline pixels
+            12: Morphed pixels (series of pixels manually set)
+            13: Shifted pixels
+    - name: 'FLM'
+      dtype: uint8
+      nodata: 0
+      units: 'class'
+      flags_definition:
+        scl:
+          bits: [0,1,2,3,4,5,6,7,8,9]
+          description: Edit Data Mask – Pixel Values  
+          values:
+            0: Void (no data)
+            1: Edited (except filled pixels)
+            2: Not edited / not filled
+            3: ASTER
+            4: SRTM90
+            5: SRTM30
+            6: GMTED2010
+            7: SRTM30plus
+            8: TerraSAR-X Radargrammetric DEM
+            9: AW3D30
+    - name: 'HEM'
+      dtype: float32
+      nodata: -32767
+      units: 'height error value'
+    - name: 'HS'
+      dtype: uint8
+      nodata: 255
+      units: 'grayscale'
+    - name: 'WBM'
+      dtype: uint8
+      nodata: 256
+      units: 'class'
+      flags_definition:
+        scl:
+          bits: [0,1,2,3]
+          description: Edit Data Mask – Pixel Values  
+          values:
+            0: No Water
+            1: Ocean
+            2: Lake
+            3: River
