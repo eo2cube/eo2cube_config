@@ -1,0 +1,53 @@
+acquisition:
+  groundstation:
+    code: LS8
+creation_dt: '2014-01-01T00:01:00.002Z'
+extent:
+  center_dt: '2014-01-01T00:01:00.002Z'
+  coord:
+    ll:
+      lat: 19.427058
+      lon: -29.305469
+    lr:
+      lat: 20.807639
+      lon: -29.314594
+    ul:
+      lat: 19.443739
+      lon: -28.186369
+    ur:
+      lat: 20.809681
+      lon: -28.195086
+  from_dt: '2014-01-01T00:01:00.002Z'
+  to_dt: '2014-01-01T00:01:00.002Z'
+format:
+  name: GeoTIFF
+grid_spatial:
+  projection:
+    geo_ref_points:
+      ll:
+        x: 347238.139
+        y: 6757143.784
+      lr:
+        x: 481321.104
+        y: 6757143.784
+      ul:
+        x: 347238.139
+        y: 6881172.019
+      ur:
+        x: 481321.104
+        y: 6881172.019
+    spatial_reference: PROJCRS["WGS 84 / UTM zone 34S",BASEGEOGCRS["WGS 84",DATUM["World Geodetic System 1984",ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4326]],CONVERSION["UTM zone 34S",METHOD["Transverse Mercator",ID["EPSG",9807]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",21,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["Scale factor at natural origin",0.9996,SCALEUNIT["unity",1],ID["EPSG",8805]],PARAMETER["False easting",500000,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",10000000,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["(E)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["(N)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["Engineering survey, topographic mapping."],AREA["Between 18°E and 24°E, southern hemisphere between 80°S and equator onshore and offshore. Angola. Botswana. Democratic Republic of the Cong(Zaire). Namibia. South Africa. Zambia."],BBOX[-80,18,0,24]],ID["EPSG",32734]]
+id: 2a09a7a8-f901-4ff8-9765-c766bcb8ffa1
+image:
+  bands:
+    NLC:
+      layer: 1
+      path: /datacube/NLC_DEA/NLC_DEA_2013_2014/reprojected/SALDi_02_subset.tif
+instrument:
+  name: OLI
+lineage:
+  source_datasets: {}
+platform:
+  code: LS8
+processing_level: L2
+product_type: NLC
