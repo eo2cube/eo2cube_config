@@ -4,7 +4,7 @@ output_type: nlc_ls8_dea_2013_2014_saldi_06
 description: 72 Class GTI South African National Land Cover Dataset (2013/2014), EPSG:32736
 
 location: '/datacube/ingested_data/'
-file_path_template: 'nlc_dea_2013_2014/nlc_saldi_06/{tile_index[0]}/{tile_index[1]}/{start_time}.nc'
+file_path_template: 'nlc_dea/nlc_dea_2013_2014_saldi_06/{tile_index[0]}/{tile_index[1]}/{start_time}.nc'
 global_attributes:
   title: SALDi Data Cube
   summary: South African National Land Cover Dataset (2013/2014)
