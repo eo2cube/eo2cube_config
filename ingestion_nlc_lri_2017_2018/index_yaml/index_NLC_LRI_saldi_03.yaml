@@ -1,0 +1,53 @@
+acquisition:
+  groundstation:
+    code: LS8
+creation_dt: '2018-01-01T00:01:00.003Z'
+extent:
+  center_dt: '2018-01-01T00:01:00.003Z'
+  coord:
+    ll:
+      lat: 23.962058
+      lon: -29.499153
+    lr:
+      lat: 24.990258
+      lon: -29.518681
+    ul:
+      lat: 23.991681
+      lon: -28.481633
+    ur:
+      lat: 25.009875
+      lon: -28.500364
+  from_dt: '2018-01-01T00:01:00.003Z'
+  to_dt: '2018-01-01T00:01:00.003Z'
+format:
+  name: GeoTIFF
+grid_spatial:
+  projection:
+    geo_ref_points:
+      ll:
+        x: 205465.781
+        y: 6732863.101
+      lr:
+        x: 305215.781
+        y: 6732863.101
+      ul:
+        x: 205465.781
+        y: 6845753.101
+      ur:
+        x: 305215.781
+        y: 6845753.101
+    spatial_reference: PROJCRS["WGS 84 / UTM zone 35S",BASEGEOGCRS["WGS 84",DATUM["World Geodetic System 1984",ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4326]],CONVERSION["UTM zone 35S",METHOD["Transverse Mercator",ID["EPSG",9807]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",27,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["Scale factor at natural origin",0.9996,SCALEUNIT["unity",1],ID["EPSG",8805]],PARAMETER["False easting",500000,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",10000000,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["(E)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["(N)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["Engineering survey, topographic mapping."],AREA["Between 24°E and 30°E, southern hemisphere between 80°S and equator, onshore and offshore. Botswana. Burundi. Democratic Republic of the Congo (Zaire). Rwanda. South Africa. Tanzania. Uganda. Zambia. Zimbabwe."],BBOX[-80,24,0,30]],ID["EPSG",32735]]
+id: 7f7be4e7-a0cc-49b7-84cb-f7b5332de034
+image:
+  bands:
+    NLC:
+      layer: 1
+      path: /datacube/NLC_DEA/NLC_2017_2018/reprojected/SA_NLC_2017_Site_03.tif
+instrument:
+  name: OLI
+lineage:
+  source_datasets: {}
+platform:
+  code: LS8
+processing_level: L2
+product_type: NLC
