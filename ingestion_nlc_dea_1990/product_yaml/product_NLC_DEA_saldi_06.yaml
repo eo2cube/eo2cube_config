@@ -1,0 +1,59 @@
+name: nlc_dea_1990_saldi_06
+description: 35 Class GTI South African National Land Cover Dataset (1990)
+metadata_type: eo
+
+metadata:
+  platform:
+    code: LS5
+  instrument:
+    name: OLI
+  product_type: NLC
+  format:
+    name: GeoTIFF
+
+measurements:
+    - name: 'NLC'
+      dtype: uint8
+      nodata: 0
+      units: 'class'
+      flags_definition:
+        scl:
+          bits: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35]
+          description: Landcover Classes NLC
+          values:
+            0: Void (no data)
+            1: Indigenous Forest
+            2: Thicket / Dense bush
+            3: Woodland / Open bush
+            4: Low shrubland
+            5: Plantations / Woodlots
+            6: Cultivated commercial annual crops non-pivot
+            7: Cultivated commercial annual crop pivot
+            8: Cultivated commercial permanent orchards
+            9: Cultivated commercial permanent vines
+            10: Cultivated subsistence crops
+            11: Settlements
+            12: Wetlands
+            13: Grassland
+            14: Fynbos - forest
+            15: Fynbos - thicket
+            16: Fynbos - open bush
+            17: Fynbos - low shrub
+            18: Fynbos - grassland
+            19: Fynbos - bare ground
+            20: Nama Karoo - forest
+            21: Nama Karoo - thicket
+            22: Nama Karoo - open bush
+            23: Nama Karoo - low shrub
+            24: Nama Karoo - grassland
+            25: Nama Karoo - bare ground
+            26: Succulent Karoo - forest
+            27: Succulent Karoo - thicket
+            28: Succulent Karoo - open bush
+            29: Succulent Karoo - low shrub
+            30: Succulent Karoo - grassland
+            31: Succulent Karoo - bare ground
+            32: Mines
+            33: Waterbodies
+            34: Bare Ground
+            35: Degraded
