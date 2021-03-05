@@ -1,0 +1,53 @@
+acquisition:
+  groundstation:
+    code: LS5
+creation_dt: '1990-01-01T00:01:00.001Z'
+extent:
+  center_dt: '1990-01-01T00:01:00.001Z'
+  coord:
+    ll:
+      lat: 19.349622
+      lon: -34.920392
+    lr:
+      lat: 20.978619
+      lon: -34.931597
+    ul:
+      lat: 19.373922
+      lon: -33.669047
+    ur:
+      lat: 20.978936
+      lon: -33.679744
+  from_dt: '1990-01-01T00:01:00.001Z'
+  to_dt: '1990-01-01T00:01:00.001Z'
+format:
+  name: GeoTIFF
+grid_spatial:
+  projection:
+    geo_ref_points:
+      ll:
+        x: 349247.421
+        y: 6134542.207
+      lr:
+        x: 498047.421
+        y: 6134542.207
+      ul:
+        x: 349247.421
+        y: 6273352.207
+      ur:
+        x: 498047.421
+        y: 6273352.207
+    spatial_reference: PROJCRS["WGS 84 / UTM zone 34S",BASEGEOGCRS["WGS 84",DATUM["World Geodetic System 1984",ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4326]],CONVERSION["UTM zone 34S",METHOD["Transverse Mercator",ID["EPSG",9807]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",21,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["Scale factor at natural origin",0.9996,SCALEUNIT["unity",1],ID["EPSG",8805]],PARAMETER["False easting",500000,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",10000000,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["(E)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["(N)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["Engineering survey, topographic mapping."],AREA["Between 18°E and 24°E, southern hemisphere between 80°S and equator, onshore and offshore. Angola. Botswana. Democratic Republic of the Congo (Zaire). Namibia. South Africa. Zambia."],BBOX[-80,18,0,24]],ID["EPSG",32734]]
+id: 3b9cb7b1-5a39-482b-9968-13fbbb25270a
+image:
+  bands:
+    NLC:
+      layer: 1
+      path: /datacube/NLC_DEA/NLC_DEA_1990/reprojected/SA_NLC_1990_Site_01.tif
+instrument:
+  name: OLI
+lineage:
+  source_datasets: {}
+platform:
+  code: LS5
+processing_level: L2
+product_type: NLC
