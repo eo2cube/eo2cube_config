@@ -1,0 +1,97 @@
+name: nlc_dea_2018_saldi_05
+description: 73 Class GTI South African National Land Cover Dataset (2018)
+metadata_type: eo
+
+metadata:
+  platform:
+    code: S2
+  instrument:
+    name: MSI
+  product_type: NLC
+  format:
+    name: GeoTIFF
+
+measurements:
+    - name: 'NLC'
+      dtype: uint8
+      nodata: 0
+      units: 'class'
+      flags_definition:
+        scl:
+          bits: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73]
+          description: Landcover Classes NLC
+          values:
+            0: Void (no data)
+            1: Contiguous Forest (combined very high, high, medium)
+            2: Contiguous Low Forest & Thicket
+            3: Dense Forest & Woodland
+            4: Open Woodland
+            5: Contiguous & Dense Planted Forest
+            6: Open & Sparse Planted Forest
+            7: Temporary Unplanted Forest
+            8: Low Shrubland (other regions)
+            9: Low Shrubland (Fynbos)
+            10: Low Shrubland (Succulent Karoo)
+            11: Low Shrubland (Nama Karoo)
+            12: Sparsely Wooded Grassland
+            13: Natural Grassland
+            14: Natural Rivers
+            15: Natural Estuaries & Lagoons
+            16: Natural Ocean
+            17: Natural Lakes
+            18: Natural Pans (flooded)
+            19: Artificial Dams
+            20: Artificial Sewage Ponds
+            21: Artificial Flooded Mine Pits
+            22: Herbaceous Wetlands (currently mapped)
+            23: Herbaceous Wetlands (previous mapped extent)
+            24: Mangrove Wetlands
+            25: Natural Rock Surfaces
+            26: Dry Pans
+            27: Eroded Lands
+            28: Sand Dunes (terrestrial)
+            29: Coastal Dunes & Beach Sand
+            30: Bare Riverbed Material
+            31: Other Bare
+            32: Cultivated Commercial Permanent Orchards
+            33: Cultivated Commercial Permanent Vines
+            34: Cultivated Commercial Sugarcane Pivot Irrigated
+            35: Commercial Permanent (Pineapples)
+            36: Cultivated Commercial Sugarcane Non-Pivot (all other)
+            37: Cultivated Emerging Farmer Sugarcane Non-Pivot (all other)
+            38: Cultivated Commercial Annuals Pivot Irrigated
+            39: Cultivated Commercial Annuals Non-Pivot Irrigated
+            40: Cultivated Commercial Annuals Non-Pivot / Non-Irrigated
+            41: Subsistence Annual Crops
+            42: Fallow Land & Old Fields (Trees)
+            43: Fallow Land & Old Fields (Bush)
+            44: Fallow Land & Old Fields (Grass)
+            45: Fallow Land & Old Fields (Bare)
+            46: Fallow Land & Old Fields (Low Shrub)
+            47: Residential Formal (Tree)
+            48: Residential Formal (Bush)
+            49: Residential Formal (low veg / grass)
+            50: Residential Formal (Bare)
+            51: Residential Informal (Tree)
+            52: Residential Informal (Bush)
+            53: Residential Informal (low veg / grass)
+            54: Residential Informal (Bare)
+            55: Village Scattered
+            56: Village Dense
+            57: Smallholdings (Tree)
+            58: Smallholdings (Bush)
+            59: Smallholdings (low veg / grass)
+            60: Smallholdings (Bare)
+            61: Urban Recreational Fields (Tree)
+            62: Urban Recreational Fields (Bush)
+            63: Urban Recreational Fields (Grass)
+            64: Urban Recreational Fields (Bare)
+            65: Commercial
+            66: Industrial
+            67: Roads & Rail (Major Linear)
+            68: Mines - Surface Infrastructure
+            69: Mines - Extraction Sites, Open Cast & Quarries combined
+            70: Mines - Extraction Sites, Salt Mines
+            71: Mines - Waste (Tailings) & Resource Dumps
+            72: Land-fills
+            73: Fallow Land & Old Fields (wetlands)
