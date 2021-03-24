@@ -29,7 +29,7 @@ def geo_ref_points(path):
 #==============================================
 
 # source directory » *.tif
-source_dir = '/media/pak44ck/SSD_Linux_Files/CUBES/SALDi/QGIS/xx_subsets_for_saldicube/NLC_DEA_1990/reprojected'
+source_dir = '/path'
 
 # extracting basenames from source_dir
 source_list = glob.glob(source_dir + '/*.tif', recursive=True)
