@@ -66,7 +66,7 @@ for i in range(len(source_list)):
 
     # additional product parameters
     product_type = 'Global WaterPack'
-    code = 'Aqua'
+    code = 'AQUA_TERRA'
     instrument = 'MODIS'
     timestamp = format_time()
     PROJCRS = raster.GetProjection()
