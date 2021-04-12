@@ -11,6 +11,14 @@ def format_time():
     s = t.strftime('%Y-%m-%dT%H:%M:%S.%f')
     return s[:-3]+'Z'
 
+# MODIS timestamp - day of the year
+def format_time_MODIS(doy):
+    year = int(doy[16:-18])
+    days = int(doy[20:-15])
+    s = datetime.datetime(year, 1, 1) + datetime.timedelta(days - 1)
+    s = s.strftime('%Y-%m-%dT%H:%M:%S.%f')
+    return s[:-3]+'Z'
+
 # calculate right geo_ref_point, combine all corners
 def geo_ref_points(path):
     ulx, xres, xskew, uly, yskew, yres  = path.GetGeoTransform()
@@ -29,7 +37,7 @@ def geo_ref_points(path):
 #==============================================
 
 # source directory » *.tif
-source_dir = '/path'
+source_dir = 'path'
 
 # extracting basenames from source_dir
 source_list = glob.glob(source_dir + '/*.tif', recursive=True)
@@ -68,7 +76,7 @@ for i in range(len(source_list)):
     product_type = 'Global WaterPack'
     code = 'AQUA_TERRA'
     instrument = 'MODIS'
-    timestamp = format_time()
+    timestamp = format_time_MODIS(basename[i])
     PROJCRS = raster.GetProjection()
     id = str(uuid.uuid4())
 
