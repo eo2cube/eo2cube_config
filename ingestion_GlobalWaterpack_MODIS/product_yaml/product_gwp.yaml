@@ -1,0 +1,25 @@
+name: global_waterpack
+description: daily inland surface water extent
+metadata_type: eo
+
+metadata:
+  platform:
+    code: AQUA_TERRA
+  instrument:
+    name: MODIS
+  product_type: GWP
+  format:
+    name: GeoTIFF
+
+measurements:
+    - name: 'GWP'
+      dtype: uint8
+      nodata: 255
+      units: '1'
+      flags_definition:
+        scl:
+          bits: [0,1]
+          description: Global Waterpack
+          values:
+            0: no water
+            1: water
