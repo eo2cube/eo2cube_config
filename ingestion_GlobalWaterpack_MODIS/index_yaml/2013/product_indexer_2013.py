@@ -121,3 +121,5 @@ for i in range(len(source_list)):
     # write yaml file
     with open(basename[i] + '.yaml', 'w') as f:
         data = yaml.dump(drop, f, width=1000)
+    
+    print('Yaml ' + str(i + 1)  +' / ' + str(len(source_list)) + ' created.')
