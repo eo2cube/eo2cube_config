@@ -4,16 +4,16 @@ output_type: modis_global_waterpack
 description: daily inland surface water extent, EPSG:32733
 
 location: '/datacube/ingested_data/'
-file_path_template: 'nlc_dea/modis_global_waterpack/{tile_index[0]}/{tile_index[1]}/{start_time}.nc'
+file_path_template: 'modis_global_waterpack/{tile_index[0]}/{tile_index[1]}/{start_time}.nc'
 global_attributes:
   title: Namibian Data Cube
   summary: Global Waterpack
   source: German Aerospace Center (DLR)
   institution: JMU Wuerzburg
-  instrument: MODIS
+  instrument: AQUA_TERRA
   cdm_data_type: Grid
   keywords: NAMIBIA,GWP
-  platform: AQUA_TERRA
+  platform: MODIS
   processing_level: L2
   product_version: '1.0.0'
   product_suite: Global Waterpack

@@ -1,0 +1,53 @@
+acquisition:
+  groundstation:
+    code: MODIS
+creation_dt: '2013-01-02T00:00:00.000Z'
+extend:
+  center_dt: '2013-01-02T00:00:00.000Z'
+  coord:
+    ll:
+      lat: 10.2644892
+      lon: -30.1646205
+    lr:
+      lat: 23.0943147
+      lon: -29.9999467
+    ul:
+      lat: 10.6432518
+      lon: -19.9464572
+    ur:
+      lat: 22.4519103
+      lon: -19.8433909
+  from_dt: '2013-01-02T00:00:00.000Z'
+  to_dt: '2013-01-02T00:00:00.000Z'
+format:
+  name: GeoTIFF
+grid_spatial:
+  projection:
+    geo_ref_points:
+      ll:
+        x: 43767.818
+        y: 6653485.712
+      lr:
+        x: 1281985.198
+        y: 6653485.712
+      ul:
+        x: 43767.818
+        y: 7788518.31
+      ur:
+        x: 1281985.198
+        y: 7788518.31
+    spatial_reference: PROJCS["WGS 84 / UTM zone 33S",GEOGCS["WGS 84",DATUM["WGS_1984",SPHEROID["WGS 84",6378137,298.257223563,AUTHORITY["EPSG","7030"]],AUTHORITY["EPSG","6326"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4326"]],PROJECTION["Transverse_Mercator"],PARAMETER["latitude_of_origin",0],PARAMETER["central_meridian",15],PARAMETER["scale_factor",0.9996],PARAMETER["false_easting",500000],PARAMETER["false_northing",10000000],UNIT["metre",1,AUTHORITY["EPSG","9001"]],AXIS["Easting",EAST],AXIS["Northing",NORTH],AUTHORITY["EPSG","32733"]]
+id: 5f48decf-19bc-4906-b3cc-6f1b0a32f630
+image:
+  bands:
+    GWP:
+      layer: 1
+      path: /datacube/GlobalWaterpack/2013/reproj_INT09GQ.A2013002.h19v11.005.BIN.tif
+instrument:
+  name: AQUA_TERRA
+lineage:
+  source_datasets: {}
+platform:
+  code: MODIS
+processing_level: L2
+product_type: GWP

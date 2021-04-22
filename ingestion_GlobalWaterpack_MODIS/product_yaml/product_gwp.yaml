@@ -4,9 +4,9 @@ metadata_type: eo
 
 metadata:
   platform:
-    code: AQUA_TERRA
+    code: MODIS
   instrument:
-    name: MODIS
+    name: AQUA_TERRA
   product_type: GWP
   format:
     name: GeoTIFF
@@ -19,7 +19,7 @@ measurements:
       flags_definition:
         scl:
           bits: [0,1]
-          description: Global Waterpack
+          description: GWP
           values:
             0: no water
             1: water

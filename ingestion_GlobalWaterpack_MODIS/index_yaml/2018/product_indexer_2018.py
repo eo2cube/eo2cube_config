@@ -15,8 +15,9 @@ def format_time():
 def format_time_MODIS(doy):
     year = int(doy[16:-18])
     days = int(doy[20:-15])
+    t = datetime.datetime.now()
     s = datetime.datetime(year, 1, 1) + datetime.timedelta(days - 1)
-    s = s.strftime('%Y-%m-%dT%H:%M:%S.%f')
+    s = s.strftime('%Y-%m-%dT') + t.strftime('%H:%M:%S.%f')
     return s[:-3]+'Z'
 
 # calculate right geo_ref_point, combine all corners
@@ -73,9 +74,9 @@ for i in range(len(source_list)):
     urLon = geo[0][3][1]
 
     # additional product parameters
-    product_type = 'Global WaterPack'
-    code = 'AQUA_TERRA'
-    instrument = 'MODIS'
+    product_type = 'GWP'
+    code = 'MODIS'
+    instrument = 'AQUA_TERRA'
     timestamp = format_time_MODIS(basename[i])
     PROJCRS = raster.GetProjection()
     id = str(uuid.uuid4())
@@ -87,7 +88,7 @@ for i in range(len(source_list)):
     drop = {
             'acquisition': {'groundstation': {'code': code}},
             'creation_dt': timestamp,
-            'extend': {
+            'extent': {
                 'center_dt': timestamp,
                 'coord': {'ll': {'lat': llLat,'lon': llLon}, 
                         'lr': {'lat': lrLat,'lon': lrLon},

@@ -87,7 +87,7 @@ for i in range(len(source_list)):
     drop = {
             'acquisition': {'groundstation': {'code': code}},
             'creation_dt': timestamp,
-            'extend': {
+            'extent': {
                 'center_dt': timestamp,
                 'coord': {'ll': {'lat': llLat,'lon': llLon}, 
                         'lr': {'lat': lrLat,'lon': lrLon},
