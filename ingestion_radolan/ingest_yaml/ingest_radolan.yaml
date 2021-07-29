@@ -1,0 +1,118 @@
+source_type: radolan
+output_type: radolan_dwd
+
+description: Radar-Online-Aneichung; stuendliche Niederschlagserfassung (17 Wetterradare), EPSG:31467
+
+location: '/datacube/ingested_data/'
+file_path_template: 'radolan/radolan_dwd/{tile_index[0]}/{tile_index[1]}/{start_time}.nc'
+global_attributes:
+  title: AgriSens Data Cube
+  summary: RADOLAN
+  source: Open Access Hub
+  institution: JMU Wuerzburg
+  instrument: RADAR
+  cdm_data_type: Grid
+  keywords: GERMANY,DWD,RADAR,RW
+  platform: DWD stations
+  processing_level: L2
+  product_version: '1.0.0'
+  product_suite: RADOLAN
+  project: AgriSens Data Cube
+  coverage_content_type: physical Measurement
+  references: https://www.dwd.de/DE/leistungen/radolan/radolan.html
+  license: https://www.dwd.de/DE/leistungen/radolan/radolan_info/home_freie_radolan_kartendaten.html?nn=16102&lsbId=617848
+  naming_authority: DWD
+  acknowledgment: RADOLAN (Radar-Online-Aneichung) - Analysen der Niederschlagshoehen aus radar- und stationsbasierten Messungen im Echtzeitbetrieb
+
+
+storage:
+  driver: NetCDF CF
+  
+  crs: EPSG:31467
+  tile_size:
+          x: 100000.0
+          y: 100000.0
+  resolution:
+          x: 1000
+          y: -1000
+  chunking:
+      x: 200
+      y: 200
+      time: 1
+  dimension_order: ['time', 'y', 'x']
+
+fuse_data: copy
+
+measurements:
+    - name: CC
+      dtype: float32
+      nodata: .nan
+      resampling_method: nearest
+      src_varname: 'CC'
+      zlib: True
+    - name: LWIN
+      dtype: float32
+      nodata: .nan
+      resampling_method: nearest
+      src_varname: 'LWIN'
+      zlib: True
+    - name: P1m
+      dtype: float32
+      nodata: .nan
+      resampling_method: nearest
+      src_varname: 'P1m'
+      zlib: True
+    - name: PA
+      dtype: float32
+      nodata: .nan
+      resampling_method: nearest
+      src_varname: 'PA'
+      zlib: True
+    - name: Prad
+      dtype: float32
+      nodata: .nan
+      resampling_method: nearest
+      src_varname: 'Prad'
+      zlib: True
+    - name: RH
+      dtype: float32
+      nodata: .nan
+      resampling_method: nearest
+      src_varname: 'RH'
+      zlib: True
+    - name: SD
+      dtype: float32
+      nodata: .nan
+      resampling_method: nearest
+      src_varname: 'SD'
+      zlib: True
+    - name: SWIN
+      dtype: float32
+      nodata: .nan
+      resampling_method: nearest
+      src_varname: 'SWIN'
+      zlib: True
+    - name: TA
+      dtype: float32
+      nodata: .nan
+      resampling_method: nearest
+      src_varname: 'TA'
+      zlib: True
+    - name: WDU
+      dtype: float32
+      nodata: .nan
+      resampling_method: nearest
+      src_varname: 'WDU'
+      zlib: True
+    - name: WDV
+      dtype: float32
+      nodata: .nan
+      resampling_method: nearest
+      src_varname: 'WDV'
+      zlib: True
+    - name: WS10m
+      dtype: float32
+      nodata: .nan
+      resampling_method: nearest
+      src_varname: 'WS10m'
+      zlib: True

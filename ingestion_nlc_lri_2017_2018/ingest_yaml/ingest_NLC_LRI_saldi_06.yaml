@@ -1,0 +1,52 @@
+source_type: nlc_lri_2017_2018_saldi_06
+output_type: nlc_ls8_lri_2017_2018_saldi_06
+
+description: 10 Class Land cover Classification (2017/2018), EPSG:32736
+
+location: '/datacube/ingested_data/'
+file_path_template: 'nlc_dea/nlc_lri_2017_2018_saldi_06/{tile_index[0]}/{tile_index[1]}/{start_time}.nc'
+global_attributes:
+  title: SALDi Data Cube
+  summary: Automated Land Cover Classification South Africa (2017/2018)
+  source: Land Resources International (Pty) Ltd
+  institution: JMU Wuerzburg
+  instrument: OLI
+  cdm_data_type: Grid
+  keywords: SOUTH AFRICA,SA,NLC,LRI
+  platform: LS8
+  processing_level: L2
+  product_version: '1.0.0'
+  product_suite: NLC LRI 2017/2018
+  project: SALDi South African Data Cube
+  coverage_content_type: classification
+  references: https://www.lri.co.za/
+  license: Land Resources International
+  naming_authority: Land Resources International (Pty) Ltd, Chief Directorate National Geospatial Information (CD NGI)
+  acknowledgment: see license
+
+
+storage:
+  driver: NetCDF CF
+  
+  crs: EPSG:32736
+  tile_size:
+          x: 10000.0
+          y: 10000.0
+  resolution:
+          x: 30
+          y: -30
+  chunking:
+      x: 200
+      y: 200
+      time: 1
+  dimension_order: ['time', 'y', 'x']
+
+fuse_data: copy
+
+measurements:
+    - name: NLC
+      dtype: uint8
+      nodata: 0
+      resampling_method: nearest
+      src_varname: 'NLC'
+      zlib: True

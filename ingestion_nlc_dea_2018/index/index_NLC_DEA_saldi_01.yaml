@@ -1,0 +1,53 @@
+acquisition:
+  groundstation:
+    code: S2
+creation_dt: '2018-01-01T00:01:00.011Z'
+extent:
+  center_dt: '2018-01-01T00:01:00.011Z'
+  coord:
+    ll:
+      lat: 19.429806
+      lon: -34.849781
+    lr:
+      lat: 20.899675
+      lon: -34.859878
+    ul:
+      lat: 19.450317
+      lon: -33.740378
+    ur:
+      lat: 20.900986
+      lon: -33.750067
+  from_dt: '2018-01-01T00:01:00.011Z'
+  to_dt: '2018-01-01T00:01:00.011Z'
+format:
+  name: GeoTIFF
+grid_spatial:
+  projection:
+    geo_ref_points:
+      ll:
+        x: 356449.481
+        y: 6142491.302
+      lr:
+        x: 490829.481
+        y: 6142491.302
+      ul:
+        x: 356449.481
+        y: 6265551.302
+      ur:
+        x: 490829.481
+        y: 6265551.302
+    spatial_reference: PROJCRS["WGS 84 / UTM zone 34S",BASEGEOGCRS["WGS 84",DATUM["World Geodetic System 1984",ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4326]],CONVERSION["UTM zone 34S",METHOD["Transverse Mercator",ID["EPSG",9807]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",21,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["Scale factor at natural origin",0.9996,SCALEUNIT["unity",1],ID["EPSG",8805]],PARAMETER["False easting",500000,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",10000000,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["(E)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["(N)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["Engineering survey, topographic mapping."],AREA["Between 18°E and 24°E, southern hemisphere between 80°S and equator, onshore and offshore. Angola. Botswana. Democratic Republic of the Congo (Zaire). Namibia. South Africa. Zambia."],BBOX[-80,18,0,24]],ID["EPSG",32734]]
+id: d3d5b3f6-7d2a-4563-ace4-267dcaba3ffa
+image:
+  bands:
+    NLC:
+      layer: 1
+      path: /datacube/NLC_DEA/SANLC_2018/reprojected/SA_NLC_2018_GEO_Site_01.tif
+instrument:
+  name: MSI
+lineage:
+  source_datasets: {}
+platform:
+  code: S2
+processing_level: L2
+product_type: NLC

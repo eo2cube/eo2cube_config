@@ -1,0 +1,96 @@
+name: nlc_dea_2013_2014_saldi_03
+description: 72 Class GTI South African National Land Cover Dataset (2013/2014)
+metadata_type: eo
+
+metadata:
+  platform:
+    code: LS8
+  instrument:
+    name: OLI
+  product_type: NLC
+  format:
+    name: GeoTIFF
+
+measurements:
+    - name: 'NLC'
+      dtype: uint8
+      nodata: 0
+      units: 'class'
+      flags_definition:
+        scl:
+          bits: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72]
+          description: Landcover Classes NLC
+          values:
+            0: Void (no data)
+            1: Water seasonal
+            2: Water permanent
+            3: Wetlands
+            4: Indigenous Forest
+            5: Thicket/ Dense bush
+            6: Woodland / Open bush
+            7: Grassland
+            8: Shrubland fynbos
+            9: Low shrubland
+            10: Cultivated comm fields (high)
+            11: Cultivated comm fields (med)
+            12: Cultivated comm fields (low)
+            13: Cultivated comm pivots (high)
+            14: Cultivated comm pivots (med)
+            15: Cultivated comm pivots (low)
+            16: Cultivated orchards (high)
+            17: Cultivated orchards (med)
+            18: Cultivated orchards (low)
+            19: Cultivated vines (high)
+            20: Cultivated vines (med)
+            21: Cultivated vines (low)
+            22: Cultivated permanent pineapple
+            23: Cultivated subsistence (high)
+            24: Cultivated subsistence (med)
+            25: Cultivated subsistence (low)
+            26: Cultivated cane pivot - crop
+            27: Cultivated cane pivot - fallow
+            28: Cultivated cane commercial - crop
+            29: Cultivated cane commercial - fallow
+            30: Cultivated cane emerging - crop
+            31: Cultivated cane emerging - fallow
+            32: Plantation / Woodlots mature
+            33: Plantation / Woodlots young
+            34: Plantation / Woodlots clearfelled
+            35: Mines 1 bare
+            36: Mines 2 semi-bare
+            37: Mines water seasonal
+            38: Mines water permanent
+            39: Mine buildings
+            40: Erosion (donga)
+            41: Bare none vegetated
+            42: Urban commercial
+            43: Urban industrial
+            44: Urban informal (dense trees / bush)
+            45: Urban informal (open trees / bush)
+            46: Urban informal (low veg / grass)
+            47: Urban informal (bare)
+            48: Urban residential (dense trees / bush)
+            49: Urban residential (open trees / bush)
+            50: Urban residential (low veg / grass)
+            51: Urban residential (bare)
+            52: Urban school and sports ground
+            53: Urban smallholding (dense trees / bush)
+            54: Urban smallholding (open trees / bush)
+            55: Urban smallholding (low veg / grass)
+            56: Urban smallholding (bare)
+            57: Urban sports and golf (dense trees / bush)
+            58: Urban sports and golf (open trees / bush)
+            59: Urban sports and golf (low veg / grass)
+            60: Urban sports and golf (bare)
+            61: Urban township (dense trees / bush)
+            62: Urban township (open trees / bush)
+            63: Urban township (low veg / grass)
+            64: Urban township (bare)
+            65: Urban village (dense trees / bush)
+            66: Urban village (open trees / bush)
+            67: Urban village (low veg / grass)
+            68: Urban village (bare)
+            69: Urban built-up (dense trees / bush)
+            70: Urban built-up (open trees / bush)
+            71: Urban built-up (low veg / grass)
+            72: Urban built-up (bare)

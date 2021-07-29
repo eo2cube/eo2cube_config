@@ -1,0 +1,52 @@
+source_type: nlc_dea_2013_2014_saldi_03
+output_type: nlc_ls8_dea_2013_2014_saldi_03
+
+description: 72 Class GTI South African National Land Cover Dataset (2013/2014), EPSG:32735
+
+location: '/datacube/ingested_data/'
+file_path_template: 'nlc_dea/nlc_dea_2013_2014_saldi_03/{tile_index[0]}/{tile_index[1]}/{start_time}.nc'
+global_attributes:
+  title: SALDi Data Cube
+  summary: South African National Land Cover Dataset (2013/2014)
+  source: GEOTERRAIMAGE, South African Department of Environmental Affairs
+  institution: JMU Wuerzburg
+  instrument: OLI
+  cdm_data_type: Grid
+  keywords: SOUTH AFRICA,SA,NLC,DEA
+  platform: LS8
+  processing_level: L2
+  product_version: '1.0.0'
+  product_suite: NLC DEA 2013/2014
+  project: SALDi South African Data Cube
+  coverage_content_type: classification
+  references: https://www.environment.gov.za/
+  license: https://opensourcedea.org/dea/
+  naming_authority: GEOTERRAIMAGE, South African Department of Environmental Affairs
+  acknowledgment: see license
+
+
+storage:
+  driver: NetCDF CF
+  
+  crs: EPSG:32735
+  tile_size:
+          x: 10000.0
+          y: 10000.0
+  resolution:
+          x: 30
+          y: -30
+  chunking:
+      x: 200
+      y: 200
+      time: 1
+  dimension_order: ['time', 'y', 'x']
+
+fuse_data: copy
+
+measurements:
+    - name: NLC
+      dtype: uint8
+      nodata: 0
+      resampling_method: nearest
+      src_varname: 'NLC'
+      zlib: True

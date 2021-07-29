@@ -1,0 +1,68 @@
+acquisition:
+  groundstation:
+    code: TanDEM-X
+creation_dt: '2020-01-01T00:01:00.005Z'
+extent:
+  center_dt: '2020-01-01T00:01:00.005Z'
+  coord:
+    ll:
+      lat: 25.636375
+      lon: -26.100067
+    lr:
+      lat: 27.101308
+      lon: -26.106478
+    ul:
+      lat: 25.649928
+      lon: -24.893753
+    ur:
+      lat: 27.100300
+      lon: -24.899828
+  from_dt: '2020-01-01T00:01:00.005Z'
+  to_dt: '2020-01-01T00:01:00.005Z'
+format:
+  name: GeoTIFF
+grid_spatial:
+  projection:
+    geo_ref_points:
+      ll:
+        x: 363639.456
+        y: 7112520.415
+      lr:
+        x: 510129.456
+        y: 7112520.415
+      ul:
+        x: 363639.456
+        y: 7246140.415
+      ur:
+        x: 510129.456
+        y: 7112520.415
+    spatial_reference: PROJCRS["WGS_1984_UTM_Zone_35S",BASEGEOGCRS["WGS 84",DATUM["World Geodetic System 1984",ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4326]],CONVERSION["Transverse Mercator",METHOD["Transverse Mercator",ID["EPSG",9807]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",27,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["Scale factor at natural origin",0.9996,SCALEUNIT["unity",1],ID["EPSG",8805]],PARAMETER["False easting",500000,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",10000000,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["easting",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["northing",north,ORDER[2],LENGTHUNIT["metre",1]],ID["EPSG",32735]]
+id: b7110565-e740-4475-a346-da01c60e5b3c
+image:
+  bands:
+    DEM:
+      layer: 1
+      path: /datacube/Copernicus_DEM_UTM/SALDi05_UTM35S/Copernicus_DSM_10_S25_27_E025_027_DEM_SALDi05_UTM35S.tif
+    EDM:
+      layer: 1
+      path: /datacube/Copernicus_DEM_UTM/SALDi05_UTM35S/Copernicus_DSM_10_S25_27_E025_027_EDM_SALDi05_UTM35S.tif
+    FLM:
+      layer: 1
+      path: /datacube/Copernicus_DEM_UTM/SALDi05_UTM35S/Copernicus_DSM_10_S25_27_E025_027_FLM_SALDi05_UTM35S.tif
+    HEM:
+      layer: 1
+      path: /datacube/Copernicus_DEM_UTM/SALDi05_UTM35S/Copernicus_DSM_10_S25_27_E025_027_HEM_SALDi05_UTM35S.tif
+    HS:
+      layer: 1
+      path: /datacube/Copernicus_DEM_UTM/SALDi05_UTM35S/Copernicus_DSM_10_S25_27_E025_027_HS_SALDi05_UTM35S.tif
+    WBM:
+      layer: 1
+      path: /datacube/Copernicus_DEM_UTM/SALDi05_UTM35S/Copernicus_DSM_10_S25_27_E025_027_WBM_SALDi05_UTM35S.tif
+instrument:
+  name: SAR
+lineage:
+  source_datasets: {}
+platform:
+  code: TanDEM-X
+processing_level: L2
+product_type: DEM

@@ -1,0 +1,82 @@
+source_type: dem_saldi_05
+output_type: dem_dsm_saldi_05
+
+description: Copernicus DEM GLO-30 / Digital Elevation Model, Level 2 derived from WorldDEM, EPSG:32735
+
+location: '/datacube/ingested_data/'
+file_path_template: 'copernicus_dem/dem_saldi_05/{tile_index[0]}/{tile_index[1]}/{start_time}.nc'
+global_attributes:
+  title: SALDi Data Cube
+  summary: Copernicus DEM GLO-30
+  source: Airbus DS, ESA
+  institution: JMU Wuerzburg
+  instrument: MSI
+  cdm_data_type: Grid
+  keywords: SOUTH AFRICA,SA,ESA,AIRBUS
+  platform: TanDEM-X
+  processing_level: L2
+  product_version: '1.0.0'
+  product_suite: Copernicus DEM GLO-30
+  project: SALDi South African Data Cube
+  coverage_content_type: physicalMeasurement
+  references: https://spacedata.copernicus.eu/web/cscda/dataset-details?articleId=394198
+  license: https://spacedata.copernicus.eu/documents/20126/0/CSCDA_ESA_Mission-specific+Annex+%281%29.pdf/83b44c0a-244a-7ba3-b00c-b578a34e88a7?t=1604070311399
+  naming_authority: Airbus DS, ESA
+  acknowledgment: see license
+
+
+storage:
+  driver: NetCDF CF
+  
+  crs: EPSG:32735
+  tile_size:
+          x: 10000.0
+          y: 10000.0
+  resolution:
+          x: 30
+          y: -30
+  chunking:
+      x: 200
+      y: 200
+      time: 1
+  dimension_order: ['time', 'y', 'x']
+
+fuse_data: copy
+
+measurements:
+    - name: DEM
+      dtype: float32
+      nodata: -32767
+      resampling_method: nearest
+      src_varname: 'DEM'
+      zlib: True
+    - name: EDM
+      dtype: uint8
+      nodata: 0
+      resampling_method: nearest
+      src_varname: 'EDM'
+      zlib: True
+    - name: FLM
+      dtype: uint8
+      nodata: 0
+      resampling_method: nearest
+      src_varname: 'FLM'
+      zlib: True
+    - name: HEM
+      dtype: float32
+      nodata: -32767
+      resampling_method: nearest
+      src_varname: 'HEM'
+      zlib: True
+    - name: HS
+      dtype: uint8
+      nodata: 255
+      resampling_method: nearest
+      src_varname: 'HS'
+      zlib: True
+    - name: WBM
+      dtype: uint8
+      nodata: 256
+      resampling_method: nearest
+      src_varname: 'WBM'
+      zlib: True

@@ -1,0 +1,53 @@
+acquisition:
+  groundstation:
+    code: LS8
+creation_dt: '2014-01-01T00:01:00.006Z'
+extent:
+  center_dt: '2014-01-01T00:01:00.006Z'
+  coord:
+    ll:
+      lat: 30.694383
+      lon: -26.038639
+    lr:
+      lat: 32.095822
+      lon: -26.054214
+    ul:
+      lat: 30.716972
+      lon: -24.847094
+    ur:
+      lat: 32.104689
+      lon: -24.861861
+  from_dt: '2014-01-01T00:01:00.006Z'
+  to_dt: '2014-01-01T00:01:00.006Z'
+format:
+  name: GeoTIFF
+grid_spatial:
+  projection:
+    geo_ref_points:
+      ll:
+        x: 269296.325
+        y: 7117998.712
+      lr:
+        x: 409551.244
+        y: 7117998.712
+      ul:
+        x: 269296.325
+        y: 7250050.888
+      ur:
+        x: 409551.244
+        y: 7250050.888
+    spatial_reference: PROJCRS["WGS 84 / UTM zone 36S",BASEGEOGCRS["WGS 84",DATUM["World Geodetic System 1984",ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4326]],CONVERSION["UTM zone 36S",METHOD["Transverse Mercator",ID["EPSG",9807]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",33,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["Scale factor at natural origin",0.9996,SCALEUNIT["unity",1],ID["EPSG",8805]],PARAMETER["False easting",500000,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",10000000,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["(E)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["(N)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["Engineering survey, topographic mapping."],AREA["Between 30°E and 36°E, southern hemisphere between 80°S and equator, onshore and offshore. Burundi. Eswatini (Swaziland). Kenya. Malawi. Mozambique. Rwanda. South Africa. Tanzania. Uganda. Zambia. Zimbabwe."],BBOX[-80,30,0,36]],ID["EPSG",32736]]
+id: 4ce462ea-2a2d-4486-b77c-e58a54f03687
+image:
+  bands:
+    NLC:
+      layer: 1
+      path: /datacube/NLC_DEA/NLC_DEA_2013_2014/reprojected/SALDi_06_subset.tif
+instrument:
+  name: OLI
+lineage:
+  source_datasets: {}
+platform:
+  code: LS8
+processing_level: L2
+product_type: NLC
