@@ -1,0 +1,58 @@
+name: saldi_indices_02
+description: Eleven derived indices from Sentinel-2 data
+metadata_type: eo
+
+metadata:
+  platform:
+    code: SENTINEL_2
+  instrument:
+    name: MSI
+  product_type: SPEC_INDEX
+  format:
+    name: GeoTIFF
+
+measurements:
+    - name: 'DVI'
+      dtype: float64
+      nodata: .nan
+      units: 'DVI'
+    - name: 'EVI'
+      dtype: float64
+      nodata: .nan
+      units: 'EVI'
+    - name: 'MSAVI'
+      dtype: float64
+      nodata: .nan
+      units: 'MSAVI'
+    - name: 'NDBI'
+      dtype: float64
+      nodata: .nan
+      units: 'NDBI'
+    - name: 'NDVI'
+      dtype: float64
+      nodata: .nan
+      units: 'NDVI'
+    - name: 'NDWI'
+      dtype: float64
+      nodata: .nan
+      units: 'NDWI'
+    - name: 'PVI'
+      dtype: float64
+      nodata: .nan
+      units: 'PVI'
+    - name: 'REIP'
+      dtype: float64
+      nodata: .nan
+      units: 'REIP'
+    - name: 'RVI'
+      dtype: float64
+      nodata: .nan
+      units: 'RVI'
+    - name: 'SAVI'
+      dtype: float64
+      nodata: .nan
+      units: 'SAVI'
+    - name: 'TSAVI'
+      dtype: float64
+      nodata: .nan
+      units: 'TSAVI'
