@@ -1,0 +1,15 @@
+name: s1_coherence
+metadata_type: eo3_extended
+description: Sentinel-1 Coherence Product
+metadata:
+  product:
+    name: s1_coherence
+measurements:
+- name: vh
+  dtype: float32
+  units: '1'
+  nodata: 0
+- name: vv
+  dtype: float32
+  units: '1'
+  nodata: 0

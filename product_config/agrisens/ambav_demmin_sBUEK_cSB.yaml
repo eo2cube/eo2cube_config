@@ -1,0 +1,61 @@
+name: ambav_demmin_sBUEK_cSB
+metadata_type: eo3
+description: Meteorological parameters for the Agrisens Project
+metadata:
+  product:
+    name: ambav_demmin_sBUEK_cSB
+measurements:
+- name: phen
+  dtype: float64
+  units: ''
+  nodata: NaN
+  aliases:
+  - phenology_(phase)
+- name: etact
+  dtype: float32
+  units: mm
+  nodata: NaN
+  aliases:
+  - evapotranspiration_(actual)
+- name: etopt
+  dtype: float32
+  units: mm
+  nodata: NaN
+  aliases:
+  - evapotranspiration_(optimal)
+- name: swc0to10cm
+  dtype: float32
+  units: '%'
+  nodata: NaN
+  aliases:
+  - soil_water_content_0-10_cm
+- name: swc10to20cm
+  dtype: float32
+  units: '%'
+  nodata: NaN
+  aliases:
+  - soil_water_content_10-20_cm
+- name: swc20to30cm
+  dtype: float32
+  units: '%'
+  nodata: NaN
+  aliases:
+  - soil_water_content_20-30_cm
+- name: swc30to40cm
+  dtype: float32
+  units: '%'
+  nodata: NaN
+  aliases:
+  - soil_water_content_30-40_cm
+- name: swc40to50cm
+  dtype: float32
+  units: '%'
+  nodata: NaN
+  aliases:
+  - soil_water_content_40-50_cm
+- name: swc50to60cm
+  dtype: float32
+  units: '%'
+  nodata: NaN
+  aliases:
+  - soil_water_content_50-60_cm

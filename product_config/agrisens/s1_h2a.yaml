@@ -1,0 +1,19 @@
+name: s1_h2a
+metadata_type: eo3_extended
+description: Sentinel-1A/B SAR Dual-polarimetric decomposition scenes
+metadata:
+  product:
+    name: s1_h2a
+measurements:
+- name: alpha
+  dtype: float32
+  units: degrees
+  nodata: 0
+- name: anisotropy
+  dtype: float32
+  units: ani
+  nodata: 0
+- name: entropy
+  dtype: float32
+  units: ent
+  nodata: 0

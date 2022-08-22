@@ -1,0 +1,60 @@
+name: s1_rtc
+license: CC-BY-4.0
+metadata_type: eo3_extended
+description: Sentinel 1 Gamma0 normalised radar backscatter
+metadata:
+  product:
+    name: s1_rtc
+measurements:
+- name: vv
+  dtype: float32
+  units: '1'
+  nodata: NaN
+  aliases:
+  - VV
+- name: vh
+  dtype: float32
+  units: '1'
+  nodata: NaN
+  aliases:
+  - VH
+- name: angle
+  dtype: uint8
+  units: '1'
+  nodata: 255
+  aliases:
+  - ANGLE
+  - local_incidence_angle
+- name: area
+  dtype: float32
+  units: '1'
+  nodata: NaN
+  aliases:
+  - AREA
+  - normalised_scattering_area
+- name: mask
+  dtype: uint8
+  units: '1'
+  nodata: 0
+  aliases:
+  - MASK
+  flags_definition:
+    qa:
+      bits:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+      - 7
+      values:
+        '0': no data
+        '1': valid data
+        '2': invalid data
+storage:
+  crs: EPSG:4326
+  resolution:
+    latitude: -0.0002
+    longitude: 0.0002

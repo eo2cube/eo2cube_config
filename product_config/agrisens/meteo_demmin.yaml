@@ -1,0 +1,67 @@
+name: meteo_demmin
+metadata_type: eo3
+description: Meteorological parameters for the Agrisens Project
+metadata:
+  product:
+    name: meteo_demmin
+measurements:
+- name: etfao
+  dtype: float32
+  units: mm
+  nodata: NaN
+  aliases:
+  - evapotranspiration_(fao)
+- name: p1m
+  dtype: float32
+  units: mm
+  nodata: NaN
+  aliases:
+  - precipitation_1m
+- name: pa
+  dtype: float32
+  units: hPa
+  nodata: NaN
+  aliases:
+  - atmospheric_pressured
+- name: rh
+  dtype: float32
+  units: '%'
+  nodata: NaN
+  aliases:
+  - relative_humidity
+- name: swin
+  dtype: float32
+  units: W/m^2
+  nodata: NaN
+  aliases:
+  - downward_shortwave_radiation
+- name: ta
+  dtype: float32
+  units: Celsius
+  nodata: NaN
+  aliases:
+  - air_temperature_2m
+- name: wdu
+  dtype: float32
+  units: m/s
+  nodata: NaN
+  aliases:
+  - wind_u_component_eastward
+- name: wdv
+  dtype: float32
+  units: m/s
+  nodata: NaN
+  aliases:
+  - wind_v_component_northward
+- name: ws10m
+  dtype: float32
+  units: m/s
+  nodata: NaN
+  aliases:
+  - wind_speed_10m
+- name: wd
+  dtype: float32
+  units: degrees
+  nodata: NaN
+  aliases:
+  - wind_direction

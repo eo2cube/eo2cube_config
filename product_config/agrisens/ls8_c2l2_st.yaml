@@ -1,0 +1,234 @@
+name: ls8_c2l2_st
+license: CC-BY-4.0
+metadata_type: eo3_extended
+description: USGS Landsat 8 Collection 2 Level-2 Surface Temperature
+metadata:
+  product:
+    name: ls8_c2l2_st
+measurements:
+- name: lwir11
+  dtype: uint16
+  units: Kelvin
+  nodata: 0
+  aliases:
+  - band_10
+  - st
+  - surface_temperature
+- name: TRAD
+  dtype: int16
+  units: W/(m2.sr.μm)
+  nodata: -9999
+  aliases:
+  - trad
+  - thermal_radiance
+- name: URAD
+  dtype: int16
+  units: W/(m2.sr.μm)
+  nodata: -9999
+  aliases:
+  - urad
+  - upwell_radiance
+- name: DRAD
+  dtype: int16
+  units: W/(m2.sr.μm)
+  nodata: -9999
+  aliases:
+  - drad
+  - downwell_radiance
+- name: ATRAN
+  dtype: int16
+  units: '1'
+  nodata: -9999
+  aliases:
+  - atran
+  - atmospheric_transmittance
+- name: EMIS
+  dtype: int16
+  units: '1'
+  nodata: -9999
+  aliases:
+  - emis
+  - emissivity
+- name: EMSD
+  dtype: int16
+  units: '1'
+  nodata: -9999
+  aliases:
+  - emsd
+  - emissivity_stddev
+- name: CDIST
+  dtype: int16
+  units: Kilometers
+  nodata: -9999
+  aliases:
+  - cdist
+  - cloud_distance
+- name: qa_pixel
+  dtype: uint16
+  units: bit_index
+  nodata: 1
+  aliases:
+  - pq
+  - pixel_quality
+  flags_definition:
+    snow:
+      bits: 5
+      values:
+        '0': not_high_confidence
+        '1': high_confidence
+    clear:
+      bits: 6
+      values:
+        '0': false
+        '1': true
+    cloud:
+      bits: 3
+      values:
+        '0': not_high_confidence
+        '1': high_confidence
+    water:
+      bits: 7
+      values:
+        '0': land_or_cloud
+        '1': water
+    cirrus:
+      bits: 2
+      values:
+        '0': not_high_confidence
+        '1': high_confidence
+    nodata:
+      bits: 0
+      values:
+        '0': false
+        '1': true
+    cloud_shadow:
+      bits: 4
+      values:
+        '0': not_high_confidence
+        '1': high_confidence
+    dilated_cloud:
+      bits: 1
+      values:
+        '0': not_dilated
+        '1': dilated
+    cloud_confidence:
+      bits:
+      - 8
+      - 9
+      values:
+        '0': none
+        '1': low
+        '2': medium
+        '3': high
+    cirrus_confidence:
+      bits:
+      - 14
+      - 15
+      values:
+        '0': none
+        '1': low
+        '2': reserved
+        '3': high
+    snow_ice_confidence:
+      bits:
+      - 12
+      - 13
+      values:
+        '0': none
+        '1': low
+        '2': reserved
+        '3': high
+    cloud_shadow_confidence:
+      bits:
+      - 10
+      - 11
+      values:
+        '0': none
+        '1': low
+        '2': reserved
+        '3': high
+- name: qa_radsat
+  dtype: uint16
+  units: bit_index
+  nodata: 0
+  aliases:
+  - radsat
+  - radiometric_saturation
+  flags_definition:
+    nir_saturation:
+      bits: 4
+      values:
+        '0': false
+        '1': true
+    red_saturation:
+      bits: 3
+      values:
+        '0': false
+        '1': true
+    blue_saturation:
+      bits: 1
+      values:
+        '0': false
+        '1': true
+    green_saturation:
+      bits: 2
+      values:
+        '0': false
+        '1': true
+    band_1_saturation:
+      bits: 0
+      values:
+        '0': false
+        '1': true
+    band_2_saturation:
+      bits: 1
+      values:
+        '0': false
+        '1': true
+    band_3_saturation:
+      bits: 2
+      values:
+        '0': false
+        '1': true
+    band_4_saturation:
+      bits: 3
+      values:
+        '0': false
+        '1': true
+    band_5_saturation:
+      bits: 4
+      values:
+        '0': false
+        '1': true
+    band_6_saturation:
+      bits: 5
+      values:
+        '0': false
+        '1': true
+    band_7_saturation:
+      bits: 6
+      values:
+        '0': false
+        '1': true
+    swir_1_saturation:
+      bits: 5
+      values:
+        '0': false
+        '1': true
+    swir_2_saturation:
+      bits: 6
+      values:
+        '0': false
+        '1': true
+    terrain_occlusion:
+      bits: 11
+      values:
+        '0': false
+        '1': true
+- name: QA
+  dtype: int16
+  units: Kelvin
+  nodata: -9999
+  aliases:
+  - st_qa
+  - surface_temperature_quality
